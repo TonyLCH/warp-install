@@ -8,7 +8,7 @@ sudo apt -t $(lsb_release -sc)-backports install linux-image-$(dpkg --print-arch
 sudo apt install wireguard-dkms -y
 curl -fsSL wireguard-go.hkcls-network.workers.dev | sudo bash
 curl -fsSL wgcf-install.hkcls-network.workers.dev | sudo bash
-wgcf register
+echo | wgcf register
 wgcf generate
 sed -i '/\:\:\/0/d' wgcf-profile.conf | sed -i 's/engage.cloudflareclient.com/[2606:4700:d0::a29f:c001]/g' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
