@@ -15,3 +15,5 @@ cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 sudo systemctl start wg-quick@wgcf
 sudo systemctl enable wg-quick@wgcf
 grep -qE '^[ ]*label[ ]*2002::/16[ ]*2' /etc/gai.conf || echo 'label 2002::/16   2' | sudo tee -a /etc/gai.conf
+sudo wg-quick down wgcf
+sudo wg-quick up wgcf
