@@ -3,11 +3,11 @@
 ```bash
 apt install wget
 ```
-#純IPV6專用
+純IPV6專用
 ```bash
 wget -N --no-check-certificate "https://www.hkcls-network.gq/warp.sh" && chmod +x warp.sh && ./warp.sh
 ```
-#純IPV4專用
+純IPV4專用
 ```bash
 wget -N --no-check-certificate "https://www.hkcls-network.gq/ipv4.sh" && chmod +x warp.sh && ./warp.sh
 ```
