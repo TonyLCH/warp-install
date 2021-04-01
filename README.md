@@ -1,6 +1,6 @@
 # 一鍵安裝WARP腳本
 (為IPV6不能使用NAT64訪問IPV4網站而設)
-
+此腳本只支援Debian
 
 如果不能用wget指令請先安裝
 ```bash
