@@ -1,4 +1,5 @@
-# 一鍵安裝WARP腳本(為IPV6不能使用NAT64訪問IPV4網站而設)
+# 一鍵安裝WARP腳本
+(為IPV6不能使用NAT64訪問IPV4網站而設)
 
 ```bash
 apt install wget
