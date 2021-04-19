@@ -7,6 +7,10 @@
 ```bash
 apt install wget
 ```
+NAT64
+```bash
+echo -e nameserver 2a02:180:6:5::1c > /etc/resolv.conf
+```
 純IPV6專用
 ```bash
 wget -N --no-check-certificate "https://www.hkcls-network.gq/warp.sh" && chmod +x warp.sh && ./warp.sh
