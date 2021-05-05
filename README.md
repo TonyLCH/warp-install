@@ -9,7 +9,7 @@ apt install wget
 ```
 NAT64
 ```bash
-echo -e nameserver 2a02:180:6:5::1c > /etc/resolv.conf
+echo -e "nameserver 2001:67c:2b0::4•\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
 ```
 純IPV6專用
 ```bash
