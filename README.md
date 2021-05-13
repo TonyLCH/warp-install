@@ -3,10 +3,6 @@
 
 此腳本只支援Debian
 
-如果不能用wget指令請先安裝
-```bash
-apt install wget
-```
 NAT64
 ```bash
 echo -e "nameserver 2001:67c:2b0::4•\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
