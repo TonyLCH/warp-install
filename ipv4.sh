@@ -10,7 +10,7 @@ curl -fsSL wireguard-go.hkcls-network.workers.dev | sudo bash
 curl -fsSL wgcf-install.hkcls-network.workers.dev | sudo bash
 echo | wgcf register
 wgcf generate
-sudo sed -i '/0\.\0\/0/d' wgcf-profile.conf | sudo sed -i 's/engage.cloudflareclient.com/162.159.192.1/g' wgcf-profile.conf | sudo sed -i 's/1.1.1.1/9.9.9.10,8.8.8.8,1.1.1.1/g' wgcf-profile.conf
+sudo sed -i '/0\.\0\/0/d' wgcf-profile.conf | sudo sed -i 's/engage.cloudflareclient.com/162.159.192.1/g' wgcf-profile.conf | sed -i 's/1.1.1.1/208.67.222.222,208.67.220.220,8.8.8.8,2001:4860:4860::8888,2001:4860:4860::8844/g' wgcf-profile.conf
 cp wgcf-profile.conf /etc/wireguard/wgcf.conf
 sudo systemctl start wg-quick@wgcf
 sudo systemctl enable wg-quick@wgcf
