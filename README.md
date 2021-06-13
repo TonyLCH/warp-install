@@ -6,6 +6,8 @@
 NAT64
 ```bash
 echo -e "nameserver 2001:67c:2b0::4•\nnameserver 2001:67c:2b0::6" > /etc/resolv.conf
+```
+```bash
 echo -e "nameserver 2606:4700:4700::64\nnameserver 2606:4700:4700::6400\nnameserver 2001:4860:4860::6464\nnameserver 2001:4860:4860::64" > /etc/resolv.conf
 ```
 純IPV6專用
