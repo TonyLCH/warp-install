@@ -15,7 +15,7 @@ wget -N --no-check-certificate "https://www.hkcls-network.gq/warp.sh" && chmod +
 ```bash
 wget -N --no-check-certificate "https://www.hkcls-network.gq/ipv4.sh" && chmod +x warp.sh && ./warp.sh
 ```
-fscarmen
+fscarmen腳本
 ```bash
 echo -e nameserver 2a00:1098:2b::1 > /etc/resolv.conf && wget -N -6 "https://raw.githubusercontent.com/fscarmen/warp/main/dualstack.sh" && chmod +x dualstack.sh && ./dualstack.sh
 ```
