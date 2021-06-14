@@ -15,3 +15,7 @@ wget -N --no-check-certificate "https://www.hkcls-network.gq/warp.sh" && chmod +
 ```bash
 wget -N --no-check-certificate "https://www.hkcls-network.gq/ipv4.sh" && chmod +x warp.sh && ./warp.sh
 ```
+fscarmen
+```bash
+wget -N -6 "https://raw.githubusercontent.com/fscarmen/warp/main/dualstack.sh" && chmod +x dualstack.sh && ./dualstack.sh
+```
